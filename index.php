@@ -80,7 +80,7 @@ $articles = mysqli_query($connection, "SELECT * FROM `artcl` WHERE `categories_i
 
             <div class="block">
 
-              <a href="/articles.php?categories=2">Все записи</a>
+              <a href="/articles.php?categories=2">Все записи!</a>
               <h3>Безопасность [Новейшее]</h3>
               <div class="block__content">
                 <div class="articles articles__horizontal">
