@@ -35,7 +35,7 @@ $articles = mysqli_query($connection, "SELECT * FROM `artcl` WHERE `categories_i
         <div class="row">
           <section class="content__left col-md-8">
             <div class="block">
-              <a href="/articles.php">Все записи</a>
+              <a href="/articles.php">Все записи!</a>
               <h3>Новейшее_в_блоге</h3>
               <div class="block__content">
                 <div class="articles articles__horizontal">
