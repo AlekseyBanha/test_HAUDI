@@ -9,6 +9,7 @@
                     <li><a href="/">Главная</a></li>
                     <li><a href="/pages/about_me.php" target="_blank">Обо мне</a></li>
                     <li><a href="<?php   echo  $config['vk_url']; ?>" target="_blank">Я Вконтакте</a></li>
+
                 </ul>
             </nav>
         </div>
