@@ -10,7 +10,7 @@
                 <li><a href="/">Главная</a></li>
                 <li><a href="/pages/about_me.php">Обо мне</a></li>
 
-                <li><a href="../admin/admin.php">Панель Администратора</a> </li>
+                <li><a href="../admin2/index.php">Панель Администратора</a> </li>
                 <li><a href="/pages/copyright.php">Правообладателям</a></li>
 
             </ul>
