@@ -152,8 +152,29 @@ body {
 
   color: #000000;
 }
+.sas{
+  position: absolute;
+  left: 1444px;
+  top: 171px;
+  display: block;
+  background-color: rgba(70, 136, 71, 0.37);
+  font-family: "Bad Script";
+  color: #ea3d61;
+  font-size: 30px;
 
 
+}
+.bad1{
+  position: absolute;
+  padding: 10px;
+  margin-left: 850px;
+  margin-top: 400px;
+}
+.bad{
+  display: block;
+
+
+}
 
 
 .articles .article:after {
