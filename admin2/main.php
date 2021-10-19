@@ -13,6 +13,7 @@ include "../includes/config.php";
     <title>Admin</title>
 </head>
 <style>
+    
     th,td{
         padding: 10px;
     }
@@ -21,7 +22,7 @@ include "../includes/config.php";
     table{padding-right:600px;}
 
 </style>
-<body>
+<body >
 
     <table class="bad">
         <tr>
