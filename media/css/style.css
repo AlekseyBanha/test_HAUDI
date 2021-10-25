@@ -162,8 +162,21 @@ body {
   color: #ea3d61;
   font-size: 30px;
 
+}
+.sew
+{background-color: rgba(123, 222, 224, 0.68);
+
 
 }
+.sas2{
+  position: center;
+  padding: 300px;
+  display: block;
+  background-color: rgba(70, 136, 71, 0.37);
+  font-family: "Bad Script";
+  color: #ea3d61;
+  font-size: 30px;
+transform: scale(1.4);}
 .bad1{
   position: absolute;
   padding: 10px;
@@ -172,6 +185,9 @@ body {
 }
 .bad{
   display: block;
+  transform: scale(0.69);
+  position: absolute;
+  top: -1258px;
 
 
 }

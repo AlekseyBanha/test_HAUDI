@@ -22,7 +22,7 @@ include "../includes/config.php";
     table{padding-right:600px;}
 
 </style>
-<body >
+<body class="sew">
 
     <table class="bad">
         <tr>
@@ -42,7 +42,7 @@ include "../includes/config.php";
             <td><?=  $artcl[0] ?></td>
             <td><?=  $artcl[1] ?></td>
             <td><?=  $artcl[2] ?></td>
-            <td><?=  $artcl[3] ?></td>
+            <td class="eae"><?=  $artcl[3] ?></td>
             <td><?=  $artcl[4] ?></td>
             <td><a href="update.php?id=<?=  $artcl[0] ?>">Редактировать</a> </td>
             <td><a style="color: red;" href="delete.php?id=<?=  $artcl[0] ?>">Удалить</a> </td>
@@ -55,17 +55,18 @@ include "../includes/config.php";
         <p>Новая статья</p>
         <input type="text" name="title">
         <p>Фото</p>
-        <input type="text" name="img">
+        <input type="file" name="file">
         <p>Текст</p>
         <textarea name="text"></textarea>
-        <p>Номер категории</p>
-        <input type="number" name="Categories_id" > <br><br>
+        <p>Категория</p>
+       <select  name="Categories_id" >
+           <option value="1">Программирование</option>
+           <option value="2">Безопасность</option>
+           <option value="3">Хакерство</option>
+           <option value="4">Разное</option>
+       </select> <br><br>
         <button type="submit" >Добавить новую статью</button> <br><br>
-        <p>Категории:</p>
-        <p>1-Программирование</p>
-        <p>2-Безопасность</p>
-        <p>3-Хакерство</p>
-        <p>4-Разное</p>
+
     </form>
 
 </body>
