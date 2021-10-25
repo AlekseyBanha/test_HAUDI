@@ -51,7 +51,7 @@ include "../includes/config.php";
         ?>
 
     </table>
-    <form action="create.php" method="post" class="sas">
+    <form  enctype="multipart/form-data"  action="create.php" method="post" class="sas">
         <p>Новая статья</p>
         <input type="text" name="title">
         <p>Фото</p>
@@ -59,7 +59,9 @@ include "../includes/config.php";
         <p>Текст</p>
         <textarea name="text"></textarea>
         <p>Категория</p>
-       <select  name="Categories_id" >
+        <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
+
+        <select  name="Categories_id" >
            <option value="1">Программирование</option>
            <option value="2">Безопасность</option>
            <option value="3">Хакерство</option>
@@ -68,6 +70,7 @@ include "../includes/config.php";
         <button type="submit" >Добавить новую статью</button> <br><br>
 
     </form>
+
 
 </body>
 </html>
