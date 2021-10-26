@@ -53,12 +53,12 @@ include "../includes/config.php";
     </table>
     <form  enctype="multipart/form-data"  action="create.php" method="post" class="sas">
         <p>Новая статья</p>
-        <input type="text" name="title">
-        <p>Фото</p>
-        <input type="file" name="file">
-        <p>Текст</p>
-        <textarea name="text"></textarea>
-        <p>Категория</p>
+        <input type="text" name="title"><br>
+        <br><p>Фото</p>
+        <input type="file" name="file"><br>
+        <br><p>Текст</p>
+        <textarea name="text"></textarea><br>
+        <br><p>Категория</p>
         <input type="hidden" name="MAX_FILE_SIZE" value="3000000" />
 
         <select  name="Categories_id" >

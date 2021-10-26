@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="/media/css/style.css">
 </head>
-<?php
+<body class="sew"><?php
 
 session_start();
 //print_r($_SESSION);
@@ -24,4 +24,5 @@ if (!$_SESSION["logined"]) {
     header("Location: http://test/admin2/main.php");
     exit();
 }
-?>
+?></body>
+</html>
