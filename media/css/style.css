@@ -154,44 +154,91 @@ body {
 }
 .sas{
   position: absolute;
-  left: 1444px;
-  top: 171px;
-  display: block;
-  background-color: rgba(70, 136, 71, 0.37);
-  font-family: "Bad Script";
-  color: #ea3d61;
+  right: 4px;
+  bottom: 195px;
+
+  padding: 20px;;
+  background: radial-gradient(rgba(16, 227, 245, 0.75), rgba(252, 0, 174, 0.7));
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  -webkit-text-stroke: .07em rgba(0,0,0,.5);
+  text-shadow: .07em 0 #ee00ff;
   font-size: 30px;
+  transform: scale(0.9);
 
 }
-.sew
-{background-color: rgba(123, 222, 224, 0.68);
+.duck{
+  background-image: url(XOsX.gif) ;
+ height: 500px;
+  width: 430px;
+  position: absolute;
+  top: 400px;
+  transform: scale(0.6);
+}
+.sew {
+  background-image: url(body.jpg) ;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%
+}
+#foot1{
+  color: rgba(195, 46, 234, 0.65);
 
-
+  text-shadow: .07em 0 #fdfdfd;
+}
+.btn-group{
+  position: absolute;
+  left: 475px;
+  top: 17px;
 }
 .sas2{
-  position: center;
-  padding: 300px;
-  display: block;
-  background-color: rgba(70, 136, 71, 0.37);
-  font-family: "Bad Script";
+
+  padding: 80px;
+
+
+  font-family: 'Roboto', sans-serif;
   color: #ea3d61;
   font-size: 30px;
-transform: scale(1.4);}
+}
+.sex{
+  background: radial-gradient(rgba(16, 227, 245, 0.75), rgba(252, 0, 174, 0.7));
+  padding: 8px;
+  text-decoration: none;
+
+}
+#foot2{
+  background-image: url(sas.jpg) ;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%
+}
 .bad1{
   position: absolute;
   padding: 10px;
   margin-left: 850px;
   margin-top: 400px;
 }
-.bad{
-  display: block;
-  transform: scale(0.69);
+.bad{top: 50px;
+  right:550px;
+  transform: scale(0.9);
   position: absolute;
-  top: -1258px;
+  color: white;
+
+  text-shadow: .07em 0 #090c04;
+  font-size: 15px;
+  background: radial-gradient(rgba(16, 227, 245, 0.75), rgba(252, 0, 174, 0.7));
+
 
 
 }
+.pagin{
+  color: #ea3d61;
 
+  right: 400px;
+
+}
 
 .articles .article:after {
   visibility: hidden;
