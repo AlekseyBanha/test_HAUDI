@@ -41,17 +41,7 @@ if (!$db) {
 
 </style>
 <body class="sew">
-
-    <table class="bad">
-        <tr id="foot1">
-            <th>ID</th>
-            <th>Заголовок</th>
-            <th>Фото</th>
-            <th>Текст</th>
-            <th>Категория</th>
-            <th>Редактирование</th>
-            <th>Удаление</th>
-        </tr><?php
+<?php
         if (isset($_GET['pageno'])) {
         $pageno = $_GET['pageno'];
         } else {
@@ -72,13 +62,24 @@ if (!$db) {
         // Создаём SQL запрос для получения данных
         $sql = "SELECT * FROM `artcl` LIMIT $offset, $size_page";
         // Отправляем SQL запрос
-        $res_data = mysqli_query($db, $sql);
-        // Цикл для вывода строк
-//        while($row = mysqli_fetch_array($res_data)){
-//            // Выводим логин пользователя
-//            echo $row['title'] . '</br>';
-//        }
-        while($row = mysqli_fetch_array($res_data)){
+        $res_data = mysqli_query($db, $sql);?>
+
+    <table class="bad">
+        <tr id="foot1">
+            <th>ID</th>
+            <th>Заголовок</th>
+            <th>Фото</th>
+            <th>Текст</th>
+            <th>Категория</th>
+            <th>Редактирование</th>
+            <th>Удаление</th>
+        </tr>
+<!--        // Цикл для вывода строк-->
+<!--//        while($row = mysqli_fetch_array($res_data)){-->
+<!--//            // Выводим логин пользователя-->
+<!--//            echo $row['title'] . '</br>';-->C:\Users\Admin\Downloads\Telegram Desktop\м2_ВМ_1.mhtml
+<!--//        }-->
+        <?while($row = mysqli_fetch_array($res_data)){
             ?>
             <tr >
                 <td><?=  $row[0] ?></td>
@@ -89,9 +90,7 @@ if (!$db) {
                 <td><a style="color: rgba(238,10,234,0.7);" href="update.php?id=<?=  $row[0] ?>">Редактировать</a> </td>
                 <td><a style="color: red;" href="delete.php?id=<?=  $row[0] ?>">Удалить</a> </td>
             </tr> <?php
-        }
-
-//?><!--     <div class="pagin">-->
+        }?><!--     <div class="pagin">-->
 <!--            <table >-->
 <!--                <tr><a href="?pageno=1">Первая</a></tr>-->
 <!--                <tr class="--><?php //if($pageno <= 1){ echo 'disabled'; } ?><!--">-->
