@@ -27,11 +27,6 @@ require "../TrnsJson.php";
     <?php
     Logger::$PATH = dirname(__FILE__);
     Logger::getLogger($name)->log($data);
-    $trs=new TrnsJson('filename.log','filename.json');
-    $trs->openFileIn();
-    $trs->openFileOut();
-    $trs->transform();
-    $trs->fileClose();
 
     ?>
 </div>

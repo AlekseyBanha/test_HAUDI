@@ -22,7 +22,7 @@ class Logger
             return ;
         }
 
-        $this->fp=fopen($this->file==null ? self::$PATH.'/'.$this->name.'filename.log' : self::$PATH.'/'.$this->file,'a+');
+        $this->fp=fopen($this->file==null ? self::$PATH.'/'.$this->name.'filename.json' : self::$PATH.'/'.$this->file,'a+');
     }
 
     public static function getLogger($name='root',$file=null){
@@ -39,29 +39,26 @@ class Logger
 
             return ;
         }
-
-        $log='';
-
-        $log.='['.date('Y-m-d H:i:s',time()). '] ';
-
         $host_user=$_SERVER['SCRIPT_FILENAME'];
-        $host_user=explode('/',$host_user);
-        if (empty($host_user['pages'])){
-            $log.= "action:". $host_user[4];
-        }else {
-            $log.= "action:". $host_user[5];
-        }
-        $log.= " - $_SERVER[REMOTE_ADDR]".'  ';
+        $host_user=explode('C:/OpenServer/domains/',$host_user);
+        $log=[
+            'time'=>date('Y-m-d H:i:s',time()),
+            'action'=> $host_user[1] ,
+            'ip_user'=> " - $_SERVER[REMOTE_ADDR]"
+        ];
+
+        $arr=json_encode($log);
+
         if(func_num_args()>1){
             $params=func_get_args();
 
             $message=call_user_func_array('sprintf',$params);
         }
 
-        $log.=$message;
-        $log.="\n";
+        $arr.=$message;
+        $arr.="\n";
 
-        $this->_write($log);
+        $this->_write($arr);
     }
 
     public function logPrint($obj){
