@@ -1,6 +1,9 @@
 
 <?php
 require "../includes/config.php";
+require "../Logger.php";
+require "../ITransform.php";
+require "../TrnsJson.php";
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -20,7 +23,18 @@ require "../includes/config.php";
 
 </head>
 <body>
+<div hidden='hidden'>
+    <?php
+    Logger::$PATH = dirname(__FILE__);
+    Logger::getLogger($name)->log($data);
+    $trs=new TrnsJson('filename.log','filename.json');
+    $trs->openFileIn();
+    $trs->openFileOut();
+    $trs->transform();
+    $trs->fileClose();
 
+    ?>
+</div>
 <div id="wrapper">
 
    <?php  include "../includes/header.php";  ?>

@@ -28,7 +28,7 @@ if (!$db) {
     <title>Admin</title>
 </head>
 <style>
-    
+
     th,td{
         padding: 10px;
     }
@@ -41,6 +41,9 @@ if (!$db) {
 
 </style>
 <body class="sew">
+<div hidden='hidden'>
+
+</div>
 <?php
         if (isset($_GET['pageno'])) {
         $pageno = $_GET['pageno'];
@@ -77,7 +80,7 @@ if (!$db) {
 <!--        // Цикл для вывода строк-->
 <!--//        while($row = mysqli_fetch_array($res_data)){-->
 <!--//            // Выводим логин пользователя-->
-<!--//            echo $row['title'] . '</br>';-->C:\Users\Admin\Downloads\Telegram Desktop\м2_ВМ_1.mhtml
+<!--//            echo $row['title'] . '</br>';-->
 <!--//        }-->
         <?while($row = mysqli_fetch_array($res_data)){
             ?>

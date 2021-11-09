@@ -1,5 +1,6 @@
 <?php
 require "includes/config.php";
+require "Logger.php";
 
 ?>
 <!DOCTYPE html>
@@ -142,7 +143,9 @@ require "includes/config.php";
         </div>
     </div>
 
-    <?php include "includes/footer.php"; ?>
+    <?php include "includes/footer.php";
+    Logger::$PATH = dirname(__FILE__);
+    Logger::getLogger($name)->log($data);?>
 
 </div>
 

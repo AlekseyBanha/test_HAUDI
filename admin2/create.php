@@ -18,4 +18,5 @@ $Categories_id=$_POST['Categories_id'];
 mysqli_query($connection, "INSERT INTO `artcl` (`id`, `title`, `img`, `text`, `categories_id`, `pubdate`, `views`) VALUES (NULL, '$title', '$name_file', '$text', '$Categories_id', CURRENT_TIMESTAMP, '0')");
 
 
-header( 'Location: ../admin2/main.php');
+header( 'Location: ../admin2/main.php');?>
+

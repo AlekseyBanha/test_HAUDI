@@ -1,6 +1,6 @@
 <?php
 require "includes/config.php";
-
+require "Logger.php";
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,7 +181,9 @@ require "includes/config.php";
                     ?>
 
 
-                    <?php include "includes/footer.php"; ?>
+                    <?php include "includes/footer.php";
+                    Logger::$PATH = dirname(__FILE__);
+                    Logger::getLogger($name)->log($data);?>
             </div>
 
 </body>

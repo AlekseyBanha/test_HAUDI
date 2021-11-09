@@ -1,7 +1,7 @@
 
 <?php
 require "../includes/config.php";
-
+require "../Logger.php";
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +22,12 @@ require "../includes/config.php";
 <body>
 
 <div id="wrapper">
-
+    <div hidden='hidden'>
+        <?php
+        Logger::$PATH = dirname(__FILE__);
+        Logger::getLogger($name)->log($data);
+        ?>
+    </div>
     <?php  include "../includes/header.php";  ?>
 
     <div id="content">
