@@ -61,6 +61,10 @@ class Logger
         $this->_write($arr);
     }
 
+
+
+
+
     public function logPrint($obj){
         ob_start();
 
