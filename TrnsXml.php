@@ -13,9 +13,9 @@ class TrnsXml implements ITransform
 
     public function transform($json) {
     $this->serializer = new XML_Serializer();
-    $this->obj = json_decode($json);
+    $this->obj = json_decode($this->json);
 
-    if ($serializer->serialize($obj)) {
+    if ($serializer->serialize($this->obj)) {
         return $serializer->getSerializedData();
     }
     else {

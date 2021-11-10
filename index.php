@@ -2,11 +2,10 @@
 <?php
 require "includes/config.php";
 require "Logger.php";
-?>
-<?php
-$articles = mysqli_query($connection, "SELECT * FROM `artcl` WHERE `categories_id` = 2 ORDER BY `id` DESC LIMIT 4");
+
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -257,6 +256,8 @@ $articles = mysqli_query($connection, "SELECT * FROM `artcl` WHERE `categories_i
     <?php
     Logger::$PATH = dirname(__FILE__);
     Logger::getLogger($name)->log($data);
+
+
     ?>
 </div>
 <?php include "includes/footer.php" ;

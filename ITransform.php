@@ -1,4 +1,4 @@
 <?php
 interface ITransform  {
-    public function transform();
+    public function log();
 }
